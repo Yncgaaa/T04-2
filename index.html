@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appliance Energy Consumption | Australian Market</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo" id="logo-btn" aria-label="Home">
+        <img src="images/power-logo.png" alt="Power Logo" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active" data-page="home">Home</a>
+        <a href="#televisions" class="nav-link" data-page="televisions">Televisions</a>
+        <a href="#about" class="nav-link" data-page="about">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main View Container (Swapped via JS) -->
+  <main class="content-container">
+
+    <!-- Page 1: Home -->
+    <section id="home" class="page-view active">
+      <div class="hero-banner">
+        <h1>Appliance Energy Efficiency in Australia</h1>
+        <p class="lead-text">
+          Interactive chart comparing different brands currently on the Australian market.
+        </p>
+      </div>
+
+      <div class="grid-cards">
+        <article class="card">
+          <div class="card-badge">Data</div>
+          <h2>Data Source</h2>
+          <p>
+            All data for this study was sourced directly from the official Australian Government open data portal at https://data.gov.au/.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-badge">Energy Efficiency</div>
+          <h2>Australian Television Energy Consumption Insights</h2>
+          <p>
+            Displays energy efficiency indicators for various televisions sold in Australia, including energy efficiency star ratings, screen technology, and annual electricity consumption.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-badge">Data Visualisation</div>
+          <h2>Data Analysis</h2>
+          <p>
+            This portal serves as a testing platform for the COS30045 Data Visualization course, utilizing KNIME for data analysis and chart visualization.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Page 2: Televisions -->
+    <section id="televisions" class="page-view">
+      <header class="section-header">
+        <h1>Television Energy Market Overview</h1>
+      </header>
+
+      <div class="tv-research-card">
+        <!-- Question 1 + Images -->
+        <div class="question-block">
+          <h2>Q1. What type of TV screen technologies are currently available in Australia and which are the most frequent?</h2>
+          <div class="tv-image-wrapper">
+            <img src="images/q1.png" alt="TV Screen Technologies Chart" class="tv-research-img">
+          </div>
+          <div class="tv-image-wrapper">
+            <img src="images/q12.png" alt="Most Frequent Screen Technology" class="tv-research-img">
+          </div>
+          <div class="answer-box">Most TVs in Australia are LCD (LED) , whereas OLED TVs are less common.</div>
+        </div>
+
+        <!-- Question 2 + Image -->
+        <div class="question-block">
+          <h2>Q2. What screen sizes are available and which are most frequent?</h2>
+          <div class="tv-image-wrapper">
+            <img src="images/q2.png" alt="TV Screen Sizes Chart" class="tv-research-img">
+          </div>
+          <div class="answer-box">65-inch is the most common size, followed by mid-range sizes around 55 inches.</div>
+        </div>
+
+        <!-- Question 3 + Image -->
+        <div class="question-block">
+          <h2>Q3. Which brands have the largest number of models?</h2>
+          <div class="tv-image-wrapper">
+            <img src="images/q3.png" alt="TV Brands by Model Count" class="tv-research-img">
+          </div>
+          <div class="answer-box">KOGAN, LG, and SAMSUNG dominate the market with the largest number of models.</div>
+        </div>
+
+        <!-- Question 4 + Image -->
+        <div class="question-block">
+          <h2>Q4. Which type of screen technology consumes the least amount of power?</h2>
+          <div class="tv-image-wrapper">
+            <img src="images/q4.png" alt="Screen Tech Power Consumption" class="tv-research-img">
+          </div>
+          <div class="answer-box">LCD TVs consume the least power, while OLED uses slightly more.</div>
+        </div>
+
+        <!-- Question 5 + Image -->
+        <div class="question-block">
+          <h2>Q5. What is the relationship between screen size and power use?</h2>
+          <div class="tv-image-wrapper">
+            <img src="images/q5.png" alt="Screen Size vs Power Usage" class="tv-research-img">
+          </div>
+          <div class="answer-box">Larger TVs use more power</div>
+        </div>
+
+        <!-- Question 6 + Image -->
+        <div class="question-block">
+          <h2>Q6. What is the relationship between star rating and screen size?</h2>
+          <div class="tv-image-wrapper">
+            <img src="images/q6.png" alt="Star Rating vs Screen Size" class="tv-research-img">
+          </div>
+          <div class="answer-box">Star ratings are fairly distributed; bigger TVs can still be efficient.</div>
+        </div>
+
+        <!-- Question 7 + Images -->
+        <div class="question-block">
+          <h2>Q7. Are there differences in power consumption between brands?</h2>
+          <div class="tv-image-wrapper">
+            <img src="images/q7.png" alt="Brand Power Consumption Differences" class="tv-research-img">
+          </div>
+          <p style="margin: 1rem 0 0.5rem; font-weight: 600; color: var(--text-dark);">Top 10 brands by median avg_mode_power:</p>
+          <div class="tv-image-wrapper">
+            <img src="images/q8.png" alt="Top 10 Brands by Median Power" class="tv-research-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page 3: About Us -->
+    <section id="about" class="page-view">
+      <header class="section-header">
+        <h1>About This Project</h1>
+        <p>COS30045 Data Visualisation — Unit Demonstration Project</p>
+      </header>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h2>Project Purpose</h2>
+          <p>
+            This website is developed as part of <strong>COS30045 Data Visualisation</strong> at Swinburne University of Technology. It acts as an interactive demonstration platform to host web-based data visualisations exploring energy consumption data in Australia.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h2>Technical Stack</h2>
+          <ul class="spec-list">
+            <li><strong>Frontend:</strong> Semantic HTML5, CSS3 Custom Properties, Vanilla JavaScript (ES6)</li>
+            <li><strong>Data Pipelines:</strong> KNIME Analytics Platform (Dataset cleaning and transformation)</li>
+            <li><strong>Version Control & Hosting:</strong> GitHub and Vercel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; <span id="current-year"></span> Yek Nai Cong</p>
+      <p class="ai-acknowledgement">
+        <em>Acknowledgement: GenAI (GitHub Copilot) was utilized to support initial code scaffolding, semantic layout structure.</em>
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
