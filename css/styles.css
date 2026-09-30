@@ -456,3 +456,9 @@ body {
     padding: 0.85rem 1rem;
   }
 }
+
+.responsive-svg-container {
+margin: 0 auto; /* center */
+width: 100%; /* fill parent width */
+max-width: 1200px; /* cap max width */
+}
