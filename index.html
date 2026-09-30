@@ -28,39 +28,15 @@
 
     <!-- Page 1: Home -->
     <section id="home" class="page-view active">
-      <div class="hero-banner">
-        <h1>Appliance Energy Efficiency in Australia</h1>
-        <p class="lead-text">
-          Interactive chart comparing different brands currently on the Australian market.
-        </p>
-      </div>
-
-      <div class="grid-cards">
-        <article class="card">
-          <div class="card-badge">Data</div>
-          <h2>Data Source</h2>
-          <p>
-            All data for this study was sourced directly from the official Australian Government open data portal at https://data.gov.au/.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-badge">Energy Efficiency</div>
-          <h2>Australian Television Energy Consumption Insights</h2>
-          <p>
-            Displays energy efficiency indicators for various televisions sold in Australia, including energy efficiency star ratings, screen technology, and annual electricity consumption.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-badge">Data Visualisation</div>
-          <h2>Data Analysis</h2>
-          <p>
-            This portal serves as a testing platform for the COS30045 Data Visualization course, utilizing KNIME for data analysis and chart visualization.
-          </p>
-        </article>
-      </div>
+      <h1>Appliance Energy Consumption</h1>
+      <div id="content"></div>
+      <!-- Give the SVG a size so shapes can be seen -->
+      <svg width="300" height="150"></svg>
+      <!-- Load D3 first, then your D3 code file -->
+      <script src="https://d3js.org/d3.v7.min.js"></script>
+      <script src="energy-d3.js"></script>
     </section>
+
 
     <!-- Page 2: Televisions -->
     <section id="televisions" class="page-view">
