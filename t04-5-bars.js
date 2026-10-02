@@ -1,6 +1,6 @@
 const createBarChart = (data) => {
     // --- Sizes (logical vs. display) ---
-    const viewW = 500;
+    const viewW = 360;
     const viewH = Math.max(220, data.length * 28);
     const displayW = 640;
     const displayH = Math.min(480, data.length * 24 + 40);
